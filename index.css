@@ -114,7 +114,6 @@
   .Digital_Clock {
     display: flex;
     gap: 1rem;
-    background: #acbaca;
     flex-direction: column;
   }
   .smallbox {
