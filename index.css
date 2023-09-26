@@ -115,6 +115,8 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    margin-top:1rem;
+    margin-bottom:2rem;
   }
   .smallbox {
     width: 120px;
