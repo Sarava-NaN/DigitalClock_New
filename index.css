@@ -117,10 +117,6 @@
     flex-direction: column;
     background: #af2bbf;
   }
-  .box{
-       margin-top:1rem;
-    margin-bottom:2rem;
-  }
   .smallbox {
     width: 120px;
     height: 100px;
