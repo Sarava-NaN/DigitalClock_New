@@ -115,6 +115,7 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    background: #af2bbf;
     margin-top:1rem;
     margin-bottom:2rem;
   }
