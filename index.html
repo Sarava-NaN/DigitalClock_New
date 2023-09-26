@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="Digital_Clock">
+      <div class="box" data-text="HOURS">
+        <div class="smallbox" style="--clr: #ff2972">
+          <span id="hour"></span>
+        </div>
+      </div>
+      <div class="box" data-text="MINUTES">
+        <div class="smallbox" style="--clr: #fee800">
+          <span id="minute"></span>
+        </div>
+      </div>
+      <div class="box" data-text="SECONDS">
+        <div class="smallbox" style="--clr: #04fc43">
+          <span id="second"></span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="smallbox last">
+          <img src="./Horloĝo_001.svg" alt="" />
+
+          <div class="clock rotate_1" id="hr" style="--clr: #34252f"></div>
+          <div class="clock rotate_2" id="mn" style="--clr: #0d00a4"></div>
+          <div class="clock rotate_3" id="sc" style="--clr: #4d8b31"></div>
+          <span id="am_pm"> </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Digital_Clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 100vh;
+  background: #acbaca;
+}
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #afbbba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255, 255, 255, 0.5),
+    15px 15px 35px rgba(255, 255, 255, 0.35),
+    inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.smallbox {
+  background-color: #152b4a;
+  width: 140px;
+  height: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 0 #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.35),
+    6px 6px 10px rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.box::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 6px;
+  font-size: 2rem;
+  width: 100%;
+  color: #af2bbf;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.smallbox span {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: aliceblue;
+  font-weight: 800;
+  color: var(--clr);
+}
+.smallbox img {
+  width: 125px;
+  position: absolute;
+}
+#second {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--clr);
+}
+#am_pm {
+  color: #ff2972;
+  position: absolute;
+  bottom: 8px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.last {
+  border-radius: 50%;
+  background-color: transparent;
+  height: 125px;
+  width: 125px;
+}
+.last::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #152b4a;
+  position: absolute;
+}
+.clock::after {
+  content: "";
+  width: 2px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--clr);
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.clock:nth-child(2):after {
+  height: 38px;
+  width: 5px;
+}
+.clock:nth-child(3):after {
+  height: 38px;
+  width: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .Digital_Clock {
+    display: flex;
+    gap: 1rem;
+    background: #acbaca;
+    flex-direction: column;
+  }
+  .smallbox {
+    width: 120px;
+    height: 100px;
+  }
+  .box::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .smallbox span {
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    color: aliceblue;
+    font-weight: 800;
+    color: var(--clr);
+  }
+  .smallbox img {
+    width: 105px;
+    position: absolute;
+  }
+  #second {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--clr);
+  }
+  #am_pm {
+    color: #ff2972;
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .last {
+    border-radius: 50%;
+    background-color: transparent;
+    height: 125px;
+    width: 125px;
+  }
+  .last::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #152b4a;
+    position: absolute;
+  }
+  .clock::after {
+    content: "";
+    width: 2px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--clr);
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+  .clock:nth-child(2):after {
+    height: 38px;
+    width: 5px;
+  }
+  .clock:nth-child(3):after {
+    height: 38px;
+    width: 4px;
+  }
+}
